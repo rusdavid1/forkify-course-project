@@ -101,8 +101,11 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const init = function () {
+const newFeature = function () {
   console.log('hello there');
+};
+
+const init = function () {
   // recipeView._addHandleNavButton(); // mobile navigation
 
   bookmarkView.addHandleRender(controlBookmarks);
@@ -115,6 +118,7 @@ const init = function () {
 
   recipeView.addHandleAddBookmark(controlAddNewBookmark);
   addRecipeView.addHandleSubmit(controlAddRecipe);
+  newFeature();
 };
 
 init();
