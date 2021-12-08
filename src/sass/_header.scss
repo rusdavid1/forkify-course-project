@@ -3,10 +3,10 @@
   background-color: $color-grey-light-1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   &__logo {
-    margin-left: 4rem;
+    // margin-left: 4rem;
     height: 4.6rem;
     display: block;
   }
@@ -151,5 +151,4 @@
 .mobile_nav {
   display: flex;
   gap: 4em;
-  margin-right: 2em;
 }

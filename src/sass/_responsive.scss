@@ -31,4 +31,36 @@
   .search__btn {
     padding: 0.8rem 0.8rem;
   }
+
+  // .search-results {
+  // }
+
+  .recipe__details {
+    padding: 9em 0em 3.2em 4em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recipe__ingredients {
+    padding: 5rem 4rem;
+  }
+
+  .btn--bookmark {
+    margin-top: 1.4em;
+  }
+
+  .add-recipe-window {
+    width: 38em;
+  }
+
+  .upload {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    grid-template-areas:
+      'head head'
+      'list list'
+      'recipe recipe';
+  }
 }
