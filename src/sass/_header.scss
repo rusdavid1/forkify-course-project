@@ -143,6 +143,13 @@
   }
 }
 
-.hamburger {
+.hamburger,
+.mobile_search {
   display: none;
+}
+
+.mobile_nav {
+  display: flex;
+  gap: 4em;
+  margin-right: 2em;
 }

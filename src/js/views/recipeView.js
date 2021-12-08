@@ -5,7 +5,8 @@ class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
   _errorMsg = `We couldn't find the recipe. Try again!`;
   _message = '';
-  // _hamburgerBtn = document.querySelector('.hamburger');
+  _hamburgerBtn = document.querySelector('.hamburger');
+  _searchIconMobile = document.querySelector('.mobile_search');
 
   addHandleRender(handler) {
     ['hashchange', 'load'].forEach(event =>
@@ -30,11 +31,24 @@ class RecipeView extends View {
     });
   }
 
-  // _addHandleNavButton() {
-  //   this._hamburgerBtn.addEventListener('click', function () {
-  //     document.querySelector('.nav__list').classList.toggle('hidden');
-  //   });
-  // }
+  _addHandleNavButton() {
+    this._hamburgerBtn.addEventListener('click', function () {
+      document.querySelector('.nav__list').classList.toggle('hidden');
+    });
+  }
+
+  _mobileSearch() {
+    document.querySelector('.search').style.display = 'flex';
+    this._searchIconMobile.style.display = 'none';
+    document.querySelector('.search__btn-text').style.display = 'none';
+  }
+
+  _addHandleSearchMobile() {
+    this._searchIconMobile.addEventListener(
+      'click',
+      this._mobileSearch.bind(this)
+    );
+  }
 
   _generateIngredients(ingredient) {
     return ` <li class="recipe__ingredient">

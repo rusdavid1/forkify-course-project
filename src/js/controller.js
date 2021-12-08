@@ -106,7 +106,8 @@ const newFeature = function () {
 };
 
 const init = function () {
-  // recipeView._addHandleNavButton(); // mobile navigation
+  recipeView._addHandleNavButton(); // mobile navigation
+  recipeView._addHandleSearchMobile();
 
   bookmarkView.addHandleRender(controlBookmarks);
 
