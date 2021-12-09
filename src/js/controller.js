@@ -106,6 +106,8 @@ const newFeature = function () {
 };
 
 const init = function () {
+  searchResultsView.addHandleSmoothScroll();
+
   recipeView._addHandleNavButton(); // mobile navigation
   recipeView._addHandleSearchMobile();
 
